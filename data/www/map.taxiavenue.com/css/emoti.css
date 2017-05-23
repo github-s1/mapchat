@@ -1,0 +1,140 @@
+/*===================== emoti.css ======================================
+=======================================================================*/
+
+.KEmoji_Block {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #bbb;
+    height: 40px;
+    left: 40px;
+}
+.KEmoji_Block span.placeholder {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    font-size: 13px;
+    color: #aaa;
+    left: 10px;
+    top: 10px;
+}
+.KEmoji_Block span.placeholder.hide {
+    display: none;
+}
+
+.KEmoji_Block .KEmoji_Input {
+    display: block;
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+.KEmoji_Block .KEmoji_Input > div[contenteditable=true] {
+    display: block;
+    position:relative;
+    z-index:10;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-right: 20px;
+    background: transparent;
+    font-size: 12px;
+    outline: none;
+    border-radius: 4px 4px 0 0 ;
+    line-height: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #444;
+}
+.KEmoji_Block .KEmoji_Input > div[contenteditable=true] img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    margin: 0 4px;
+}
+
+.KEmoji_Block .KEmoji_Clear {
+    clear: both;
+}
+.KEmoji_Block .KEmoji_Cont {
+    display: none;
+    position: absolute;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 15;
+}
+
+.KEmoji_Block .KEmoji_Cont::after{
+    content: '';
+    position:absolute;
+    top:-10px;
+    right:25px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid white;
+}
+.KEmoji_Block .KEmoji_Cont > div {
+    background: #fff;
+    /*width: 280px;*/
+    height:200px;
+    padding: 5px 2px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.KEmoji_Block .KEmoji_Cont .KEmoji_Smile {
+    float: left;
+    padding: 1px;
+    cursor: pointer;
+}
+.KEmoji_Block .KEmoji_Cont .KEmoji_Smile > div {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+.KEmoji_Block .KEmoji_Cont .KEmoji_Smile > div img {
+    margin-top: 5px;
+}
+.KEmoji_Block .KEmoji_Cont .KEmoji_Smile > div:hover {
+    background: #ccc;
+    border-radius: 2px;
+}
+
+.KEmoji_Block .KEmoji_Smiles_Show_Button > div {
+    width: 30px;
+    height: 30px;
+    background: url(../img/smile1.png) 50% 70% no-repeat;
+    cursor: pointer;
+    position: absolute;
+    left: -35px;
+    top: 0;
+}
+
+.KEmoji_Submit {
+    position: absolute;
+    right: 0px;
+    bottom: -30px;
+}
+.KEmoji_Submit > div {
+    display: inline-block;
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #eee;
+    font-size: 12px;
+    cursor: pointer;
+}
+.KEmoji_Submit > div:hover {
+    border: 1px solid #aaf;
+}
+#emoji {
+    width: 250px;
+}

@@ -1,0 +1,1 @@
+<% if(isFullList && !specifyType){%><li data-kind-id="new">    <img src="<%= kinds.newKindIcon %>" alt="Новый вид значка"/>    <p>Новый вид значка</p></li><%}%><% kinds.forEach(function(kind){%><li data-kind-id="<%= kind.get('id') %>">    <img src="<%= kind.getIconUrl() %>" alt="<%= kind.get('name_ru') %>"/>    <p><%= kind.get('name_ru') %></p></li><% })%>

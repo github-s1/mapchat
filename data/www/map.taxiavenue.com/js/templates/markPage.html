@@ -1,0 +1,118 @@
+<div class="markPage clear">
+    <div class="left">
+        <div class="photo_block clear"></div>
+        <p class="kind"><img src="<%= icon %>" alt=""/><span><%= title %></span></p>
+        <p class="description"><%= description %></p>
+        <label class="description hide" form="editMark">
+            <span >Описание:</span>
+            <textarea name="description"><%= description %></textarea>
+        </label>
+        <div class="audioWrap"></div>
+        <div class="buttons clear">
+            <a class="kind" href="<%= kindPageHref %>">
+                <figure class="kind clear">
+                    <img src="<%= icon %>" />
+                    <figcaption>
+                        <span class="title"><%= title %></span>
+                        <!--<span class="total">еще <%= countOfMarks %> знач.</span>-->
+                    </figcaption>
+                </figure>
+            </a>
+            <a class="profile" <% if(anonymous != 'y'){ %> <% if(!hasPrivilegesToEdit) { %>href="<%= user.profileLink %>"<% } %><% } %> >
+                <figure class="user clear">
+                    <% if(anonymous == 'y'){ %>
+                    	<figcaption>
+                        	Аноним
+                        </figcaption>
+                    <% } else { %>
+                        <img src="<%= user.avatar %>" />
+                        <figcaption>
+                            <%= user.name %>
+                        </figcaption>
+                    <% } %>
+                </figure>
+            </a>
+           <% if(hasPrivilegesToEdit) { %>
+           
+           <% if(anonymous != 'y'){ %>
+            <button type="button" name="anon" class="right style_butt green" style="padding: 5px 50px;">Анонимно</button>
+            <% } else { %>
+            <button type="button" name="anon" class="right style_butt green" style="padding: 5px 50px;"><%= user.name %></button>
+             <% } %>
+            
+            <% } %>
+        </div>
+        <div class="share clear">
+            <button type="button" name="remove" class="style_butt <% if (clickSpam > 2) { %>hide<% } %>">Убрать</button>
+            <% if(isGeneralKind){ %>
+            <button type="button" name="specifyType" class="style_butt green">Указать вид</button>
+            <%}%>
+            <a href="#" class="hz"></a>
+            <a href="#" class="fb"></a>
+            <a href="#" class="vk"></a>
+        </div>
+        <div class="comments_block">
+            <h3>КОММЕНТАРИИ</h3>
+            <button id="send_mess" class="right style_butt" title="Отправить сообщение" style="display: block; margin: 10px 5px 5px 0; cursor: pointer; border: none; outline: none; background: #fff url(../../img/chat_send_mess.png) center 0 no-repeat; background-size: contain;"></button>
+            <div id="emoji">
+                <div class="KEmoji_Smiles_Show_Button"><div></div></div>
+                <span class="placeholder">Что сказать?</span>
+            </div>
+            <div class="comments"></div>
+        </div>
+    </div>
+    <script>
+	/* Мега костыль */
+	$(document).ready(function(e) {
+        setTimeout(function() { 
+		$(".ymaps-2-1-23-controls__control").children().append('<span id="gps"><ymaps class="ymaps-2-1-23-zoom" style="height: 0px;padding: 17px 0px;"><ymaps class="ymaps-2-1-23-zoom__minus ymaps-2-1-23-zoom__button ymaps-2-1-23-button ymaps-2-1-23-button_size_s ymaps-2-1-23-button_theme_normal ymaps-2-1-23-user-selection-none" unselectable="on"><ymaps class="ymaps-2-1-23-zoom__icon ymaps-2-1-23-button__icon" style="  background-image: url(\'../../img/define_location.jpg\');"></ymaps></ymaps></ymaps></span>');
+		$("#gps").click(function(e) {
+			console.log('ttt44');
+			var myAction = new ymaps.map.action.Single({
+					  center: VSidebar.myCoordinates, //[0, 0],
+					  zoom: 14,
+					  duration: 1000,
+					  timingFunction: "ease-in"
+				});
+			
+			YandexMapEl.action.execute(myAction);
+			
+			
+        });
+	 }, 1000);
+    });
+	
+	
+	
+    </script>
+    <div class="right">
+        <section id="markMap">
+            <div></div>
+            <p class="address"><%= address %></p>
+            
+        </section>
+        <div class="add_info">
+            <table class="info">
+                <tr>
+                    <td>Добавлено:</td>
+                    <td><%= diffDate %></td>
+                </tr>
+                <tr>
+                    <td>Просмотров:</td>
+                    <td><%= views %></td>
+                </tr>
+                <tr>
+                    <td>Срок размещения:</td>
+                    <td><%= period %></td>
+                </tr>
+            </table>
+        </div>
+        <form enctype="multipart/form-data" id="editMark" class="<%= hasPrivilegesToEdit ? '' : 'hide'%>">
+            <input name="name" class="photo hide" type="file" />
+            <input name="position" type="hidden" />
+            <input type="hidden" name="mark_id" value="<%= id %>" />
+            <button class="style_butt hide" type="button" name="cancelEdit">Отмена</button>
+            <button class="style_butt" type="button" name="editMark">Редактировать</button>
+        </form>
+    </div>
+</div>

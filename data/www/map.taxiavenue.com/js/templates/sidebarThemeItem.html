@@ -1,0 +1,4 @@
+<option value="-2">Все темы</option>
+<% themes.forEach(function(theme){ %>
+<option value="<%= theme.get('id') %>" ><%= theme.get('name') %></option>
+<% }); %>

@@ -1,0 +1,12 @@
+2016-05-30 20:48:17: [PM2][WORKER] Started with refreshing interval: 30000
+2016-05-30 20:48:17: [[[[ PM2/God daemon launched ]]]]
+2016-05-30 20:48:17: BUS system [READY] on port /var/www/map_chat/data/.pm2/pub.sock
+2016-05-30 20:48:17: RPC interface [READY] on port /var/www/map_chat/data/.pm2/rpc.sock
+2016-05-30 20:48:26: Starting execution sequence in -fork mode- for app name:app id:0
+2016-05-30 20:48:26: App name:app id:0 online
+2016-06-01 11:40:12: Stopping app:app id:0
+2016-06-01 11:40:12: App [app] with id [0] and pid [5322], exited with code [0] via signal [SIGINT]
+2016-06-01 11:40:12: Starting execution sequence in -fork mode- for app name:app id:0
+2016-06-01 11:40:12: App name:app id:0 online
+2016-06-01 12:13:39: Stopping app:app id:0
+2016-06-01 12:13:40: App [app] with id [0] and pid [19790], exited with code [0] via signal [SIGINT]

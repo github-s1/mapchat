@@ -1,0 +1,27 @@
+/*--------------------------SMILES_WINDOW----------------------
+-------------------------------------------------------------*/
+.smiles {
+    width: 290px;
+    height: 180px;
+    border: 1px solid #878787;
+    background-color: #fff;
+    padding: 5px;
+}
+.smiles img {
+    cursor: pointer;
+}
+.smiles .selected_smiles {
+    padding: 5px 30px 5px 0;
+    position: relative;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 10px;
+}
+.smiles .selected_smiles .delete_smiles {
+    top: 9px;
+    right: 9px;
+    position: absolute;
+}
+.smiles .smile {
+    margin-right: 3px;
+    margin-bottom: 3px;
+}

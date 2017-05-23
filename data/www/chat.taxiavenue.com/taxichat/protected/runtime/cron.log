@@ -1,0 +1,121 @@
+2014/07/08 16:43:31 [error] [php] include(DailyCommissionCommand.php): failed to open stream: No such file or directory (/var/www/taxi/YiiBase.php:427)
+Stack trace:
+#0 /var/www/taxi/console/CConsoleCommandRunner.php(170): spl_autoload_call()
+#1 /var/www/taxi/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand()
+#2 /var/www/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#3 /var/www/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#4 /var/www/taxi/yiic.php(33): CConsoleApplication->run()
+#5 /var/www/taxi/taxichat/protected/cron.php(7): require_once()
+
+2014/07/08 16:44:14 [error] [php] include(DailyCommissionCommand.php): failed to open stream: No such file or directory (/var/www/taxi/YiiBase.php:427)
+Stack trace:
+#0 /var/www/taxi/console/CConsoleCommandRunner.php(170): spl_autoload_call()
+#1 /var/www/taxi/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand()
+#2 /var/www/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#3 /var/www/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#4 /var/www/taxi/yiic.php(33): CConsoleApplication->run()
+#5 /var/www/taxi/taxichat/protected/cron.php(7): require_once()
+
+2014/07/08 16:51:11 [error] [php] include(Daily_commissionCommand.php): failed to open stream: No such file or directory (/var/www/taxi/YiiBase.php:427)
+Stack trace:
+#0 /var/www/taxi/console/CConsoleCommandRunner.php(170): spl_autoload_call()
+#1 /var/www/taxi/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand()
+#2 /var/www/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#3 /var/www/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#4 /var/www/taxi/yiic.php(33): CConsoleApplication->run()
+#5 /var/www/taxi/taxichat/protected/cron.php(7): require_once()
+
+2014/07/31 14:27:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[08006] [7] FATAL:  password authentication failed for user "postgres"' in /var/www/html/taxi/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/taxi/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/html/taxi/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/html/taxi/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/html/taxi/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/html/taxi/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/html/taxi/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /var/www/html/taxi/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/taxi/taxichat/protected/commands/Daily_commissionCommand.php(9): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/taxi/console/CConsoleCommandRunner.php(71): Daily_commissionCommand->run(Array)
+#9 /var/www/html/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#10 /var/www/html/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#11 /var/www/html/taxi/yiic.php(33): CApplication->run()
+#12 /var/www/html/taxi/taxichat/protected/cron.php(7): require_once('/var/www/html/t...')
+#13 {main}
+---
+2014/08/17 03:00:01 [error] [exception.CException] exception 'CException' with message 'Property "PaymentsHistory.id_driver" is not defined.' in /var/www/html/taxi/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/taxi/db/ar/CActiveRecord.php(161): CComponent->__set('id_driver', 139)
+#1 /var/www/html/taxi/taxichat/protected/commands/Daily_commissionCommand.php(26): CActiveRecord->__set('id_driver', 139)
+#2 /var/www/html/taxi/console/CConsoleCommandRunner.php(71): Daily_commissionCommand->run(Array)
+#3 /var/www/html/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/html/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/html/taxi/yiic.php(33): CApplication->run()
+#6 /var/www/html/taxi/taxichat/protected/cron.php(7): require_once('/var/www/html/t...')
+#7 {main}
+---
+2014/08/17 03:10:02 [error] [exception.CException] exception 'CException' with message 'Property "PaymentsHistory.id_driver" is not defined.' in /var/www/html/taxi/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/taxi/db/ar/CActiveRecord.php(161): CComponent->__set('id_driver', 140)
+#1 /var/www/html/taxi/taxichat/protected/commands/Weekly_commissionCommand.php(26): CActiveRecord->__set('id_driver', 140)
+#2 /var/www/html/taxi/console/CConsoleCommandRunner.php(71): Weekly_commissionCommand->run(Array)
+#3 /var/www/html/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/html/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/html/taxi/yiic.php(33): CApplication->run()
+#6 /var/www/html/taxi/taxichat/protected/cron.php(7): require_once('/var/www/html/t...')
+#7 {main}
+---
+2014/08/18 03:00:01 [error] [exception.CException] exception 'CException' with message 'Property "PaymentsHistory.id_driver" is not defined.' in /var/www/html/taxi/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/taxi/db/ar/CActiveRecord.php(161): CComponent->__set('id_driver', 139)
+#1 /var/www/html/taxi/taxichat/protected/commands/Daily_commissionCommand.php(26): CActiveRecord->__set('id_driver', 139)
+#2 /var/www/html/taxi/console/CConsoleCommandRunner.php(71): Daily_commissionCommand->run(Array)
+#3 /var/www/html/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/html/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/html/taxi/yiic.php(33): CApplication->run()
+#6 /var/www/html/taxi/taxichat/protected/cron.php(7): require_once('/var/www/html/t...')
+#7 {main}
+---
+2014/08/18 03:10:02 [error] [exception.CException] exception 'CException' with message 'Property "PaymentsHistory.id_driver" is not defined.' in /var/www/html/taxi/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/taxi/db/ar/CActiveRecord.php(161): CComponent->__set('id_driver', 130)
+#1 /var/www/html/taxi/taxichat/protected/commands/Weekly_commissionCommand.php(26): CActiveRecord->__set('id_driver', 130)
+#2 /var/www/html/taxi/console/CConsoleCommandRunner.php(71): Weekly_commissionCommand->run(Array)
+#3 /var/www/html/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/html/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/html/taxi/yiic.php(33): CApplication->run()
+#6 /var/www/html/taxi/taxichat/protected/cron.php(7): require_once('/var/www/html/t...')
+#7 {main}
+---
+2014/08/19 03:00:02 [error] [exception.CException] exception 'CException' with message 'Property "PaymentsHistory.id_driver" is not defined.' in /var/www/html/taxi/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/taxi/db/ar/CActiveRecord.php(161): CComponent->__set('id_driver', 138)
+#1 /var/www/html/taxi/taxichat/protected/commands/Daily_commissionCommand.php(26): CActiveRecord->__set('id_driver', 138)
+#2 /var/www/html/taxi/console/CConsoleCommandRunner.php(71): Daily_commissionCommand->run(Array)
+#3 /var/www/html/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/html/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/html/taxi/yiic.php(33): CApplication->run()
+#6 /var/www/html/taxi/taxichat/protected/cron.php(7): require_once('/var/www/html/t...')
+#7 {main}
+---
+2014/08/19 03:10:01 [error] [exception.CException] exception 'CException' with message 'Property "PaymentsHistory.id_driver" is not defined.' in /var/www/html/taxi/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/taxi/db/ar/CActiveRecord.php(161): CComponent->__set('id_driver', 155)
+#1 /var/www/html/taxi/taxichat/protected/commands/Weekly_commissionCommand.php(26): CActiveRecord->__set('id_driver', 155)
+#2 /var/www/html/taxi/console/CConsoleCommandRunner.php(71): Weekly_commissionCommand->run(Array)
+#3 /var/www/html/taxi/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /var/www/html/taxi/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /var/www/html/taxi/yiic.php(33): CApplication->run()
+#6 /var/www/html/taxi/taxichat/protected/cron.php(7): require_once('/var/www/html/t...')
+#7 {main}
+---
+2014/10/29 03:00:01 [error] [exception.CException] exception 'CException' with message 'Property "Users.password_old" is not defined.' in /srv/taxichat/base/CComponent.php:173
+Stack trace:
+#0 /srv/taxichat/db/ar/CActiveRecord.php(161): CComponent->__set('password_old', '$1$B6E4lh.g$S/m...')
+#1 /srv/taxichat/taxichat/protected/commands/Weekly_commissionCommand.php(20): CActiveRecord->__set('password_old', '$1$B6E4lh.g$S/m...')
+#2 /srv/taxichat/console/CConsoleCommandRunner.php(71): Weekly_commissionCommand->run(Array)
+#3 /srv/taxichat/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /srv/taxichat/base/CApplication.php(180): CConsoleApplication->processRequest()
+#5 /srv/taxichat/yiic.php(33): CApplication->run()
+#6 /srv/taxichat/taxichat/protected/cron.php(7): require_once('/srv/taxichat/y...')
+#7 {main}
+---

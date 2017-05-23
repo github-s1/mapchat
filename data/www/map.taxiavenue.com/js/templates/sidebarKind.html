@@ -1,0 +1,41 @@
+<div class="clear border">
+    <button title="Редактировать" class="edit"></button>
+    <a href="<%= cityPageHref %>" class="back_map"><span class="back_icon"></span>На основную карту</a>
+</div>
+<div class="icon_info clear border">
+    <div class="icon_wrap">
+        <img src="<%= imgSrc %>" alt=""/>
+        <span class="mini_corner"></span>
+    </div>
+    <p class="clear"><span class="title"><%= title %></span><span class="cityName"><%= cityName %></span></p>
+    <div class="share">
+        <a href="#" class="vk"></a>
+        <a href="#" class="fb"></a>
+        <a href="#" class="hz"></a>
+    </div>
+</div>
+<div class="border">
+    <div class="description">
+        <p class="brief intro"><%= description %></p>
+        <% if(issetFull){ %>
+        <p class="learn_more">Узнать больше >></p>
+        <%}%>
+    </div>
+</div>
+<div class="border">
+    <table class="info">
+        <tr>
+            <td>Тематика:</td>
+            <td><%= themeName %></td>
+        </tr>
+        <tr>
+            <td>Веб-сайт:</td>
+            <td><%= site %></td>
+        </tr>
+        <tr>
+            <td>Лидер города:</td>
+            <td><%= lider %></td>
+        </tr>
+    </table>
+</div>
+<p class="amt_icon"><%= totalMarks %> зн. вида "<%= title %>" в г.<%= cityName %></p>

@@ -1,0 +1,31 @@
+/*----------------------FORGOT_PASSWORD------------------------
+-------------------------------------------------------------*/
+.forgot_password {
+    height: auto;
+    margin-top: -105px;
+}
+.forgot_password .popup_head{
+    border-bottom: none;
+}
+.forgot_password label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #6b6b6b;
+}
+.forgot_password form {
+    padding: 20px 6px 8px 6px;
+}
+.forgot_password input {
+    width: 91%;
+    margin: 15px 0 30px 3px;
+}
+.forgot_password .style_butt {
+    /* padding: 10px 42px; */
+    width: 148px;
+    text-align: center;
+    line-height: 39px;
+    padding: 0;
+}
+.forgot_password .style_butt.right {
+    float: right;
+}

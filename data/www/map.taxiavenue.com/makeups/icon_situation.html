@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Map Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/jquery-ui.min.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link href="css/audioplayer.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        /*
+            VIEWPORT BUG FIX
+            iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
+        */
+        (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+    </script>
+</head>
+<body>
+<header class="clear"><!--header-->
+    <img class="logo" src="img/logo.png" alt=""/><h1>Онлайн карта</h1>
+    <form class="search" action="#">
+        <div class="border clear">
+            <input type="text" placeholder="Улица или название..."/>
+            <input type="submit" class="search_but" value=""/>
+        </div>
+        <select name="" id="">
+            <option value="">Уфа</option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </form>
+    <div class="right_head_bar group">
+        <p class="personal_msg">Чебурашка <span>+1</span></p>
+        <p class="ether"><img src="img/ether.png" alt=""/>Эфир <span>+21</span></p>
+    </div>
+</header><!--header_end-->
+<section><!--map-->
+    <div class="situation_description">
+        <div class="left_block">
+            <div class="photo_block">
+                <a href="#"><img src="img/photo_situation.png" alt=""/></a>
+                <a href="#"><img src="img/photo_situation.png" alt=""/></a>
+                <a href="#"><img src="img/photo_situation.png" alt=""/></a>
+            </div>
+            <p class="type"><img src="img/dps.png" alt=""/>Пост-ДПС<a href="#" class="red_map"></a></p>
+            <p class="desc">Краткое описание ситуации Краткое описание ситуации Краткое ...</p>
+            <div id="wrapper">
+                <audio preload="auto" controls>
+                    <source src="audio/audio.mp3">
+                </audio>
+                <script src="js/jquery-1.10.1.min.js"></script>
+                <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+            </div>
+            <div class="selected clear">
+                <div class="select_icon">
+                    <img src="img/dps.png" alt=""/>
+                </div>
+                <ul class="select_out">
+                    <li>Пост-ДПС<br>
+                        еще 4 значка
+                        <span class="arrow"></span>
+                        <ul class="select">
+                            <li>
+                                <div class="select_icon">
+                                    <img src="img/dps.png" alt=""/>
+                                </div>
+                                <span>Пост-ДПС</span><br>
+                                еще 4 значка
+                            </li>
+                            <li>
+                                <div class="select_icon">
+                                    <img src="img/dps.png" alt=""/>
+                                </div>
+                                <span>Пост-ДПС</span><br>
+                                еще 4 значка
+                            </li>
+                            <li>
+                                <div class="select_icon">
+                                    <img src="img/dps.png" alt=""/>
+                                </div>
+                                <span>Пост-ДПС</span><br>
+                                еще 4 значка
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="selected clear">
+                <div class="select_icon">
+                    <img src="img/fakiev.png" alt=""/>
+                </div>
+                <ul class="select_out">
+                    <li>Пост-ДПС<br>
+                        еще 4 значка
+                        <span class="arrow"></span>
+                        <ul class="select">
+                            <li>
+                                <div class="select_icon">
+                                    <img src="img/fakiev.png" alt=""/>
+                                </div>
+                                <span>Пост-ДПС</span><br>
+                                еще 4 значка
+                            </li>
+                            <li>
+                                <div class="select_icon">
+                                    <img src="img/fakiev.png" alt=""/>
+                                </div>
+                                <span>Пост-ДПС</span><br>
+                                еще 4 значка
+                            </li>
+                            <li>
+                                <div class="select_icon">
+                                    <img src="img/fakiev.png" alt=""/>
+                                </div>
+                                <span>Пост-ДПС</span><br>
+                                еще 4 значка
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="share clear">
+                <a href="#" class="vk"></a>
+                <a href="#" class="fb"></a>
+                <a href="#" class="hz"></a>
+                <button class="style_butt">Убрать</button>
+                <button class="style_butt green">Указать вид</button>
+            </div>
+            <div class="comments_block">
+                <p class="title">КОММЕНТАРИИ</p>
+            </div>
+        </div>
+        <div class="right_block">
+            <div class="dislo_icon">
+                <img src="img/disloc_icon.png" alt=""/>
+                улица Айская 91, Уфа, Башкортостан
+            </div>
+            <div class="add_info">
+                <table class="info">
+                    <tr>
+                        <td>Добавлено:</td>
+                        <td>3ч назад</td>
+                    </tr>
+                    <tr>
+                        <td>Просмотров:</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Срок размещения:</td>
+                        <td>Всегда</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="message_status">
+            Поздравляем метка добавлена | <a href="#">Введите минимальное описание</a>
+        </div>
+        <button class="style_butt">Анонимно</button>
+    </div>
+</section><!--map_end-->
+<footer>
+</footer>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/audioplayer.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/*----------------------PERSONAL_INFO_SECT---------------------
+-------------------------------------------------------------*/
+.personal_info_sect {
+    width: 675px;
+    margin: 10% auto;
+}
+.personal_info_sect .chat_avatar {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 5px;
+}
+.personal_info_sect .big_photo {
+    width: 200px;
+    height: 400px;
+    float: left;
+    position: relative;
+    margin-right: 5px;
+}
+.big_photo .corner {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("../img/corner.png");
+}
+.personal_info_sect .information {
+    width: 425px;
+    float: left;
+}
+.personal_info_sect .information .head {
+    border-bottom: 2px solid #56BFF0;
+    font-size: 13.5px;
+    color: #515151;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.personal_info_sect .information .status {
+    font-size: 12px;
+    color: #797979;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+.share {
+    margin-bottom: 2px;
+}
+.info {
+    margin-left: -12px;
+}
+.personal_info_sect .information .share button {
+    vertical-align: middle;
+    padding: 5px 20px;
+    float: left;
+    margin-right: 5px;
+}
+.personal_info_sect .information .val {
+    color: #000;
+}
+.personal_info_sect .information .about {
+    font-size: 12px;
+}
+.personal_info_sect .information .about .title {
+    color: #6b6b6b;
+    margin-bottom: 5px;
+}

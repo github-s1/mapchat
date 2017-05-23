@@ -1,0 +1,4 @@
+SHELL=/bin/bash
+MAILTO=lafat
+0 3 * * * php /var/www/taxi/taxichat/protected/cron.php daily_commission
+10 3 * * * php /var/www/taxi/taxichat/protected/cron.php weekly_commission

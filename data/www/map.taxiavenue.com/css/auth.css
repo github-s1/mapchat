@@ -1,0 +1,219 @@
+/*--------------------------LOGIN_WINDOW-----------------------
+-------------------------------------------------------------*/
+div#auth {
+    padding: 10px 0 0;
+}
+
+.popup.login .title {
+    padding: 8px 30px 10px 10px;
+}
+.second_title {
+    text-transform: uppercase;
+    font-size: 13px;
+    border-bottom: 2px solid #56BFF0;
+    padding-bottom: 2px;
+    margin-bottom: 7px;
+}
+.login .title {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #7fbeee;
+}
+.login .enter_soc_services {
+    margin: 0 5px;
+}
+.login .enter_soc_services button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 95px;
+    height: 25px;
+}
+.login .enter_soc_services button.vk_enter {
+    background: url("../img/vk_enter.png") 0 0 no-repeat;
+}
+.login .enter_soc_services button.facebook_enter {
+    background: url("../img/facebook_enter.png") 0 0 no-repeat;
+}
+.login .enter_soc_services button.mail_ru_enter {
+    background: url("../img/mail_ru_auth.png") 0 0 no-repeat;
+}
+.login label {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.login label span.label {
+    display: block;
+    border: none;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+}
+.login label span.mail_or_telephone {
+    background: url("../img/mail_or_telephone.png");
+}
+.login label span.password {
+    background: url("../img/password.png");
+}
+.login input[type="text"], 
+.login input[type="password"] {
+    width: 240px;
+    height: 20px;
+    padding: 2px 5px;
+}
+
+.ordinary_entrance {
+    margin: 0 0 10px;
+}
+.ordinary_entrance p {
+    padding: 5px 0;
+}
+.ordinary_entrance button.remind_password {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #333333;
+    float: left;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    margin-top: 15px;
+}
+.login .style_butt {
+    margin: 5px 0 0 0;
+    padding: 8px 20px;
+}
+
+.login .either {
+    font-size: 13px;
+    color: #333333;
+    margin: 10px;
+    text-align: center;
+}
+.login .either span {
+    width: 125px;
+    display: inline-block;
+    border-top: 1px solid #EDEDED;
+    padding: 2px 0;
+}
+.fast_reg {
+    margin: 0;
+    /*padding-bottom: 10px;*/
+}
+.login .fast_reg .confidential {
+    font-size: 12px;
+    color: #333;
+    padding: 10px 0 5px;
+}
+.login .fast_reg .confidential > span {
+    margin-top: -5px;
+    line-height: 15px;
+    display: block;
+    width: 90%;
+}
+.login .fast_reg input[type="checkbox"] {
+    margin: 0;
+}
+.fast_reg .confidential span.link {
+    text-decoration: underline;
+    color: #400080;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*---------------------- REMIND_PASSWORD ---------------------
+-------------------------------------------------------------*/
+form#remindPassword {
+    font-size: 14px;
+}
+form#remindPassword label span,
+form#remindPassword label input {
+    display: block;
+}
+form#remindPassword label input {
+    width: 307px;
+    padding: 4px;
+    margin: 15px 0 35px;
+}
+form#remindPassword label span {
+    margin-bottom: 5px;
+}
+form#remindPassword label span.title {
+    font-size: 13px;
+    font-weight: bold;
+}
+form#remindPassword span.error {
+    height: 15px;
+}
+form#remindPassword span.error.hide {
+    visibility: hidden;
+}
+
+/*----------------------- ERRORS BLOCK -----------------------
+-------------------------------------------------------------*/
+div#auth div.error,
+form#remindPassword span.error {
+    padding: 5px 2px;
+    margin-bottom: 10px;
+    font-style: italic;
+    border-radius: 3px;
+    font-size: 13px;
+    color: red;
+}
+div#auth div.error.hide {
+    display: none;
+}
+
+div#auth input.error,
+form#remindPassword input.error {
+    -webkit-animation: input_pulse 2s infinite;
+    animation: input_pulse 2s infinite;
+}
+
+@-webkit-keyframes input_pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.95);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    }
+}
+@keyframes input_pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.95);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    }
+}
+
+/*----------------------- PASSWORD CONFIRM -----------------------
+-------------------------------------------------------------*/
+ul#passwordConfirm {
+    font-size: 13px;
+    padding: 10px 0 0;
+}
+ul#passwordConfirm span {
+    display: block;
+    font-weight: bold;
+    border-bottom: 2px solid #56BFF0;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+ul#passwordConfirm li {
+    padding: 10px 10px 13px;
+    cursor: pointer;
+    margin-top: 3px;
+    border-bottom: 1px solid #aaa;
+}
+ul#passwordConfirm li:last-child {
+    border-bottom: none;
+}

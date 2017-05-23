@@ -1,0 +1,94 @@
+
+/*-------------------------- LOADER -------------------------*/
+
+figure#loader {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    overflow: visible;
+    height: 26px;
+    padding: 5px;
+    background-color: #F2F2F2;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #bbb;
+    z-index: 1000;
+}
+figure#loader img {
+    display: block;
+    float: left;
+    width: 26px;
+}
+figure#loader figcaption {
+    display: block;
+    float: right;
+    padding: 4px 4px 0 10px;
+}
+
+/*-------------------------- Choice -------------------------*/
+
+form.userChoice {
+    padding-top: 5px;
+}
+form.userChoice label, form.userChoice p {
+    font-size: 0.9em;
+    display: block;
+    padding: 5px 0 5px 50px;
+}
+form.userChoice label span {
+    display: inline-block;
+    padding-left: 5px;
+}
+form.userChoice p input[type='button'] {
+    padding: 3px 7px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+
+/*-----------------------SELECT_DISLOCATION--------------------
+-------------------------------------------------------------*/
+.select_dislocation {
+    width: 500px;
+    height: 310px;
+    padding: 5px 0;
+    overflow: hidden;
+}
+.select_dislocation .group_title {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0 2px;
+}
+.select_dislocation .group {
+    float: left;
+    width: 160px;
+    margin-right: 10px;
+}
+.select_dislocation .group:last-of-type {
+    margin-right: 0;
+}
+.select_dislocation .group ul {
+    font-size: 12px;
+    list-style: none;
+    height: 230px;
+    border: 1px solid #7A7A7A;
+    padding: 5px 0;
+    overflow-y: scroll;
+}
+.select_dislocation .group ul li {
+    padding: 3px 5px;
+    margin: 0 2px 2px 2px;
+}
+.select_dislocation .group ul li:hover {
+    cursor: pointer;
+    background-color: #9FCCFF;
+}
+.select_dislocation .group ul .active {
+    background-color: #9FCCFF;
+}
+.select_dislocation .buttons {
+    margin-top: 10px;
+    text-align: right;
+}
+.select_dislocation .buttons button {
+    padding: 7px 40px;
+}

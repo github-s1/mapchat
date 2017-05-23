@@ -1,0 +1,12 @@
+/*--------------------NEARBY_ICON_WINDOW-----------------------
+-------------------------------------------------------------*/
+.nearby_icons .label {
+    width: auto;
+    margin-bottom: 5px;
+    border-left: none;
+    border-right: none;
+}
+.nearby_icons .popup_head {
+    margin-bottom: 5px;
+    border-bottom: none;
+}

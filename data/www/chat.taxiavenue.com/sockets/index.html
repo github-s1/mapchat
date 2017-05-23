@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>WebSocket</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <style type="text/css">
+    
+    </style>
+     
+    <script type="text/javascript">
+   
+         
+       //create a new WebSocket object.
+ 
+  $(document).ready(function(){
+    //Open a WebSocket connection.
+     
+    websocket = new WebSocket("ws://127.0.0.1:4646/mysocket.php"); 
+    
+    //Connected to server
+    websocket.onopen = function(ev) {
+        alert('Connected to server ');
+    }
+    
+    //Connection close
+    websocket.onclose = function(ev) { 
+        alert('Disconnected');
+    };
+    
+    //Message Receved
+    websocket.onmessage = function(ev) { 
+        alert('Message '+ev.data);
+    };
+    
+    //Error
+    websocket.onerror = function(ev) { 
+        alert('Error '+ev.data);
+    };
+    
+     //Send a Message
+   $('#send').click(function(){ 
+       var mymessage = 'This is a test message'; 
+       websocket.send(mymessage);
+   });
+});
+    </script>
+ 
+</head>
+ 
+<body onload="">
+ 
+    <h3>WebSocket</h3>
+     <a href="javascript:void(0)" id="send"> Send </a>
+ 
+</body>
+</html>

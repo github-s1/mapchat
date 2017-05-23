@@ -1,0 +1,53 @@
+/*-------------------------ADD_PLACE---------------------------
+-------------------------------------------------------------*/
+
+select.selectTheme {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 13px;
+    color: #797979;
+    width: 120px;
+    background: url("images/select_arrow.png") 105px center no-repeat;
+}
+ul.kinds {
+    padding: 0 10px;
+    list-style: none;
+    border-top: 1px solid #868686;
+    height: 315px;
+    overflow: auto;
+    margin: 10px 0;
+}
+ul.kinds li {
+    border-bottom: 1px solid #868686;
+    padding: 8px 5px;
+    cursor: pointer;
+    overflow: hidden;
+    height: 20px;
+}
+ul.kinds li.selected {
+    background-color: #d5eafd;
+}
+ul.kinds li:hover {
+    background-color: #accbfd;
+}
+ul.kinds li img {
+    max-height: 25px;
+    max-width: 25px;
+    float: left;
+}
+ul.kinds li p {
+    padding-top: 5px;
+    margin-left: 40px;
+    font-size: 12px;
+    color: #333333;
+    font-family: verdana;
+}
+button[name='setPlace'] {
+    position: absolute;
+    font-size: 13px;
+    bottom: 15px;
+    right: 15px;
+}
+button[name='setPlace']:disabled {
+    cursor: default;
+}

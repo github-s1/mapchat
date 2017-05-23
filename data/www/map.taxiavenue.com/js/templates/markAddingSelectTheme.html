@@ -1,0 +1,1 @@
+<select name="selectTheme" class="selectTheme">    <option selected="selected" value="<%= allThemesItemId %>">Все темы</option>    <% themes.forEach(function(theme){%>        <option value="<%= theme.get('id') %>" ><%= theme.get('name') %></option>    <% })%></select>

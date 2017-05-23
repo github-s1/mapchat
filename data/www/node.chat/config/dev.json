@@ -1,0 +1,14 @@
+{
+    "sitename"  : "OnlineMap chat",
+    "mode"      : "development",
+    "host"      : "localhost",
+    "port"      : 3001,
+    "secretKeys": ["e7wser88swerh", "jufgddr99awe_e"],
+    "db"    : {
+        "host"        : "localhost",
+        "user"        : "taximap",
+        "password"    : "UFCCzrUK9BPcwGXv",
+        "database"    : "map_chat"
+    },
+    "io-origin"     : "*:*"
+}

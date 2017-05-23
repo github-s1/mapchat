@@ -1,0 +1,30 @@
+<ul>
+    <li>
+        <p class="error"><%= error %></p>
+        <label>
+            <span>Название</span>
+            <input type="text" value="<%= name_ru %>" name="name_ru" placeholder="Название вида значка"/>
+        </label>
+    </li>
+    <li>
+        <label><span>Тип</span>
+            <select name="id_type">
+                <% types.forEach(function(type){%>
+                    <% selected = (type.get('id')==id_type) ? selected="selected" : "" %>
+                    <option <%= selected %> value="<%= type.get('id') %>" ><%= type.get('name_ru') %></option>
+                <% })%>
+            </select>
+        </label>
+    </li>
+    <li>
+        <label><span>Тематика</span>
+            <select name="id_theme">
+                <% themes.forEach(function(theme){%>
+                    <% selected = (theme.get('id')==id_theme) ? selected="selected" : "" %>
+                    <option <%= selected %> value="<%= theme.get('id') %>" ><%= theme.get('name') %></option>
+                <% })%>
+            </select>
+        </label>
+    </li>
+</ul>
+<button class="style_butt">Создать</button>

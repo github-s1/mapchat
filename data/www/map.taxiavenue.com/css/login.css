@@ -1,0 +1,90 @@
+/*--------------------------LOGIN_WINDOW-----------------------
+-------------------------------------------------------------*/
+.login {
+    height: 500px;
+    margin-top: -250px;
+}
+.login .popup_head {
+    border-bottom: none;
+}
+.popup.login .title {
+    padding: 8px 30px 10px 10px;
+}
+.second_title {
+    text-transform: uppercase;
+    font-size: 13px;
+    border-bottom: 2px solid #56BFF0;
+    margin-bottom: 5px;
+}
+.login .title {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #7fbeee;
+}
+.login .enter_soc_services {
+    margin: 0 10px 10px 10px;
+}
+.login label {
+    margin-right: 10px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.login input[type="text"], .login input[type="password"] {
+    width: 232px;
+}
+.fast_reg input[type="text"], .fast_reg input[type="password"] {
+    vertical-align: top;
+}
+.fast_reg input[type="text"] {
+    margin-bottom: 4px;
+}
+.login .ordinary_entrance {
+    margin: 0 10px 10px 10px;
+}
+.login .either {
+    font-size: 13px;
+    color: #333333;
+    margin: 0 10px 10px 10px;
+}
+.login .either span {
+    width: 130px;
+    display: inline-block;
+    border-top: 1px solid #EDEDED;
+    padding: 2px 0;
+}
+.ordinary_entrance a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #333333;
+    float: left;
+    margin-top: 18px;
+}
+.ordinary_entrance .style_butt {
+    float: right;
+    margin: 7px 3px 0 0;
+}
+.ordinary_entrance input[type="password"] {
+    margin-bottom: 10px;
+}
+.fast_reg {
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+.login .fast_reg .confidential {
+    font-size: 12px;
+    color: #333;
+    float: left;
+}
+.login .fast_reg .confidential a {
+    color: #400080;
+}
+.login .fast_reg input[type="password"] {
+    margin-bottom: 10px;
+}
+.login .fast_reg input[type="checkbox"] {
+    float: right;
+    margin: 7px 8px 0 0;
+}
+.login .fast_reg .style_butt {
+    float: right;
+    margin: 4px 3px 0 0;
+}

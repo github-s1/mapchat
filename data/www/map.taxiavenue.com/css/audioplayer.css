@@ -1,0 +1,76 @@
+.audioplayer-time-current {
+	display: none;
+}
+.audioplayer-time-duration {
+	display: none;
+}
+.audioplayer-volume {
+	display: none;
+}
+.audioplayer {
+	position: relative;
+	z-index: 1;
+	margin: 22px 0 32px 0;
+}
+.audioplayer-bar
+	{
+		width: 90%;
+		background: url(images/bar_loaded_bg.png) 0 center repeat-x;
+		height: 10px;
+		cursor: pointer;
+		z-index: 1;
+		top: 50%;
+		left: 30px;
+		margin-top: -5px;
+	}
+.audioplayer-bar-loaded
+		{
+			z-index: 1;
+		}
+.audioplayer-bar-played
+		{
+			background-image: url(images/bar_played_bg.png), url(images/bar_played_bg2.png);
+			background-position: right center, 0 center;
+			background-repeat: no-repeat, repeat-x;
+			z-index: 2;
+		}
+.audioplayer-playpause
+	{
+		width: 20px;
+		height: 20px;
+		text-align: left;
+		text-indent: -9999px;
+		cursor: pointer;
+		z-index: 2;
+		top: 0;
+		left: 0;
+	}
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause a
+		{
+			background-image: url(images/player_play.png);
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+		}
+.audioplayer-playing .audioplayer-playpause {
+	background-image: url(images/player_pause.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.audioplayer-bar div
+{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.audioplayer > div {
+	position: absolute;
+}
+		.audioplayer-playpause a
+		{
+			display: block;
+		}
