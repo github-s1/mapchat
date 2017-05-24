@@ -1,7 +1,7 @@
 <?php
 
-require_once(dirname(__FILE__).'/protected/config/environment.php');
-$environment = new Environment(Environment::DEVELOPMENT);
+phpinfo();
+exit;
 
 // change the following paths if necessary
 
