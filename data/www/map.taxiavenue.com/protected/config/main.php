@@ -125,8 +125,8 @@ return CMap::mergeArray(
             'db'=>array(
                 'connectionString' => 'mysql:host=localhost;dbname=map_chat',
                 'emulatePrepare' => true,
-                'username' => 'taximap',
-                'password' => '',
+                'username' => 'root',
+                'password' => 'Z5hHKV',
                 'charset' => 'utf8',
             ),
             'errorHandler'=>array(
