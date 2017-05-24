@@ -1,5 +1,7 @@
 <?php
 
+phpinfo();
+exit;
 
 // change the following paths if necessary
 
