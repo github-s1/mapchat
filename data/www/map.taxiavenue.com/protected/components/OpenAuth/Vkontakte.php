@@ -39,7 +39,7 @@ class Vkontakte implements IOpenAuth
             //throw new CHttpException('Ошибка при авторизации.');
             return false;
         }
-        $user = (array) @json_decode(file_get_contents($this->vkApiUrl . '/access_token?client_id=' . $this->appId . '&client_secret=' . $this->secretKey . '&code=' . $vars['code'] . '&redirect_uri=http://map.taxiavenue.com/auth/openAuth/system/vkontakte'));
+        $user = (array) @json_decode(file_get_contents($this->vkApiUrl . '/access_token?client_id=' . $this->appId . '&client_secret=' . $this->secretKey . '&code=' . $vars['code'] . '&redirect_uri=http://185.159.129.150:8085/auth/openAuth/system/vkontakte'));
         
         if (isset($user['access_token'])) {
             $this->_member = array(

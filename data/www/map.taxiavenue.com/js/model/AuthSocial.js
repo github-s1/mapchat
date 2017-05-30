@@ -7,10 +7,10 @@ function(Backbone){
     return Backbone.Model.extend({
         system: {},
         params : 'left=100,top=100,height=350,width=600',
-        baseUrl: 'map.taxiavenue.com',
+        baseUrl: '185.159.129.150:8085',
         vk_enter: {
             api_url : 'http://api.vk.com/oauth/authorize',
-            redirect_uri : 'http://map.taxiavenue.com/auth/openAuth/system/vkontakte',
+            redirect_uri : 'http://185.159.129.150:8085/auth/openAuth/system/vkontakte',
             client_id: '4696521',
             makeUrl: function(baseUrl) {
                 var url = this.api_url + '?';
@@ -25,8 +25,8 @@ function(Backbone){
         },
         facebook_enter : {
             api_url: 'https://www.facebook.com/dialog/oauth',
-            //redirect_uri: 'http://map.taxiavenue.com/auth/openAuth/system/facebook',
-            redirect_uri : 'http://map.taxiavenue.com/auth/openAuth/system/facebook',
+            //redirect_uri: 'http://185.159.129.150:8085/auth/openAuth/system/facebook',
+            redirect_uri : 'http://185.159.129.150:8085/auth/openAuth/system/facebook',
             client_id: '1537195736551607',
             makeUrl: function(baseUrl) {
                 var url = this.api_url + '?';
@@ -39,8 +39,8 @@ function(Backbone){
         },
         mail_ru_enter: {
             api_url: 'https://connect.mail.ru/oauth/authorize',
-            //redirect_uri: 'http://map.taxiavenue.com/auth/openAuth/system/mail_ru',
-            redirect_uri : 'http://map.taxiavenue.com/auth/openAuth/system/mailru',
+            //redirect_uri: 'http://185.159.129.150:8085/auth/openAuth/system/mail_ru',
+            redirect_uri : 'http://185.159.129.150:8085/auth/openAuth/system/mailru',
             client_id: '728852',
             makeUrl: function(baseUrl) {
                 var url = this.api_url + '?';

@@ -42,7 +42,7 @@ class SocialAuth_jsonController extends Controller
         $client_id = Vkontakte::getAppId(); //4533710;
         $code = $_GET['code'];
         $secret = Vkontakte::getSecretKey(); //'sVl0Ca6HNztky7yU9VPj';
-        $token_url='https://oauth.vk.com/access_token?client_id='.$client_id.'&scopre=email&client_secret='.$secret.'&code='.$code.'&redirect_uri=http://map.taxiavenue.com/api/socialAuth_json/vk/&v=5.24';
+        $token_url='https://oauth.vk.com/access_token?client_id='.$client_id.'&scopre=email&client_secret='.$secret.'&code='.$code.'&redirect_uri=http://185.159.129.150:8085/api/socialAuth_json/vk/&v=5.24';
         $ch = curl_init();
             curl_setopt($ch, CURLOPT_HEADER, 0);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //Устанавливаем параметр, чтобы curl возвращал данные, вместо того, чтобы выводить их в браузер.
@@ -155,7 +155,7 @@ class SocialAuth_jsonController extends Controller
         $errors = new updateData();
         $client_id = Mailru::getAppId(); //'724330'; // ID
         $client_secret = Mailru::getSecretKey(); //'8536ed98701ae70454eaea10def4b2ea'; // Секретный ключ
-        $redirect_uri = 'http://map.taxiavenue.com/api/socialAuth_json/mailRu/'; // Ссылка на приложение
+        $redirect_uri = 'http://185.159.129.150:8085/api/socialAuth_json/mailRu/'; // Ссылка на приложение
         $result = false;
         $params = array(
             'client_id'     => $client_id,
@@ -275,7 +275,7 @@ class SocialAuth_jsonController extends Controller
             $result = false;
             $client_idFB = Facebook::getAppId(); //'682436305170121'; // Client ID
             $client_secretFB = Facebook::getSecretKey(); //'9fa9716c3077a3468737d995b10de9a3'; // Client secret
-            $redirect_uriFB = 'http://map.taxiavenue.com/api/socialAuth_json/facebook/'; // Redirect URIs
+            $redirect_uriFB = 'http://185.159.129.150:8085/api/socialAuth_json/facebook/'; // Redirect URIs
             $params = array(
                 'client_id'     => $client_idFB,
                 'redirect_uri'  => $redirect_uriFB,

@@ -37,7 +37,7 @@ class Mailru implements IOpenAuth
         }
 
         // Создать контекст и инициализировать POST запрос
-        $query = 'client_id=' . $this->appId . '&client_secret=' . $this->secretKey . '&code=' . $vars['code'] . '&grant_type=authorization_code&redirect_uri=http://map.taxiavenue.com/auth/openAuth/system/mailru';
+        $query = 'client_id=' . $this->appId . '&client_secret=' . $this->secretKey . '&code=' . $vars['code'] . '&grant_type=authorization_code&redirect_uri=http://185.159.129.150:8085/auth/openAuth/system/mailru';
         $context = stream_context_create(array(
                                               'http' => array(
                                                   'method' => 'POST',

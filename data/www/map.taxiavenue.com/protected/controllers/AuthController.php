@@ -51,7 +51,7 @@ class AuthController extends Controller
             <script type=\"text/javascript\">
                 if (window.opener != null && (window.name == 'loginSocial' || window.name.indexOf('_e_') > -1))
                 {   // Перезагрузка окна
-                    window.opener.location.href = 'http://map.taxiavenue.com';
+                    window.opener.location.href = 'http://185.159.129.150:8085';
                     window.close();
                 }
             </script>";

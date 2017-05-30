@@ -24,7 +24,7 @@ class Facebook implements IOpenAuth
     public function logOut() {}
     
     public function checkSign($vars) {
-        $user = file_get_contents('https://graph.facebook.com/oauth/access_token?client_id=' . $this->appId . '&redirect_uri=' . urlencode('http://map.taxiavenue.com/auth/openAuth/system/facebook') . '&client_secret=' . $this->secretKey . '&code=' . $vars['code']);
+        $user = file_get_contents('https://graph.facebook.com/oauth/access_token?client_id=' . $this->appId . '&redirect_uri=' . urlencode('http://185.159.129.150:8085/auth/openAuth/system/facebook') . '&client_secret=' . $this->secretKey . '&code=' . $vars['code']);
         if (!$user) {
             //$url = 'https://graph.facebook.com/oauth/access_token?client_id=' . $this->appId . '&redirect_uri=' . urlencode(_Site::$host . '/index/open_auth/type/facebook/p/1') . '&client_secret=' . $this->secretKey . '&code=' . $vars['code'];
             return false;

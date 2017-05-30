@@ -51,11 +51,11 @@ $this->breadcrumbs=array(
 
 <?php $this->endWidget(); ?>
 <h2>Do you already have an account on one of these sites? Click the logo to log in with it here:</h2>
-    <button onclick="location.href='http://api.vk.com/oauth/authorize?client_id=4533710&redirect_uri=http://map.taxiavenue.com/api/socialAuth_json/vk/';">Войти ВКонтакте</button>
+    <button onclick="location.href='http://api.vk.com/oauth/authorize?client_id=4533710&redirect_uri=http://185.159.129.150:8085/api/socialAuth_json/vk/';">Войти ВКонтакте</button>
     <?php
     $client_id = '724330'; // ID
     $client_secret = '8536ed98701ae70454eaea10def4b2ea'; // Секретный ключ
-    $redirect_uri = 'http://map.taxiavenue.com/api/socialAuth_json/mailRu/'; // Ссылка на приложение
+    $redirect_uri = 'http://185.159.129.150:8085/api/socialAuth_json/mailRu/'; // Ссылка на приложение
     $params = array(
         'client_id'     => $client_id,
         'response_type' => 'code',
@@ -70,7 +70,7 @@ $this->breadcrumbs=array(
 
     $client_idFB = '682436305170121'; // Client ID
     $client_secretFB = '9fa9716c3077a3468737d995b10de9a3'; // Client secret
-    $redirect_uriFB = 'http://map.taxiavenue.com/api/socialAuth_json/facebook/'; // Redirect URIs
+    $redirect_uriFB = 'http://185.159.129.150:8085/api/socialAuth_json/facebook/'; // Redirect URIs
 
     $url = 'https://www.facebook.com/dialog/oauth';
 
