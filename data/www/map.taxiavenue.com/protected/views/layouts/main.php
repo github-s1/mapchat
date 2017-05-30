@@ -7,7 +7,7 @@ $baseURL = Yii::app()->getBaseUrl(true);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="ru" />
-    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+    <title>2<?php echo CHtml::encode($this->pageTitle); ?></title>
     <link href="<?php echo $baseURL; ?>/css/jquery-ui.min.css" rel="stylesheet" media="screen">
     <link href="<?php echo $baseURL; ?>/css/main.css" rel="stylesheet" media="screen">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
